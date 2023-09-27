@@ -68,7 +68,7 @@ class _CartScreenState extends State<CartScreen> {
 
     Widget content() {
       return ListView(
-        children: [
+        children: const [
           CartCard(),
           CartCard(),
         ],
@@ -109,7 +109,9 @@ class _CartScreenState extends State<CartScreen> {
               height: 50,
               margin: EdgeInsets.symmetric(horizontal: defaultMargin),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/checkout');
+                },
                 style: TextButton.styleFrom(
                   backgroundColor: primaryColor,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
