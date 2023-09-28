@@ -4,6 +4,10 @@ Keymerce is a Flutter application that allows users to buy and sell products onl
 
 ## Screenshots
 
+<p align="center">
+  <img src="https://app.gemoo.com/share/image-annotation/565932496422400000?codeId=DGq9YRBjwxgab&origin=imageurlgenerator" width="200" />
+  <img src="https://app.gemoo.com/share/image-annotation/565932493989715968?codeId=DGq9YRBjwxgab" width="200" />
+  <img src="https://app.gemoo.com/share/image-annotation/565932491422789632?codeId=DGq9YRBjwxgabg" width="200" />
 
 
 ## Features
@@ -21,23 +25,9 @@ Keymerce is a Flutter application that allows users to buy and sell products onl
 ## Stack
 
 <p align="center">
-  <p> Intreface </p>
+  <p> Intreface, Database and Backend </p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=flutter" />
-  </a>
-</p>
-
-<p align="center">
-  <p> Database </p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=firebase" />
-  </a>
-</p>
-
-<p align="center">
-  <p> Backend </p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=laravel" />
+    <img src="https://skillicons.dev/icons?i=flutter,firebase,laravel" />
   </a>
 </p>
 
@@ -64,6 +54,24 @@ Once you have Flutter installed, you can clone the Keymerce repository and run t
 1. Clone the repository:
 
 This project is a starting point for a Flutter application.
+
+```
+git clone https://github.com/Firdan16/Keymerce.git
+```
+
+2. Install the dependencies:
+
+```
+flutter pub get
+```
+
+3. Run the app:
+
+```
+flutter run
+```
+
+## Resources
 
 A few resources to get you started if this is your first Flutter project:
 
