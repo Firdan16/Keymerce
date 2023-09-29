@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:keymerce/screen/boarding_screen.dart';
+import 'package:keymerce/screen/content/checkout_success_screen.dart';
 import 'package:keymerce/screen/content/product_screen.dart';
 import 'package:keymerce/screen/home/cart_screen.dart';
 import 'package:keymerce/screen/home/checkout_screen.dart';
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
             '/chat': (context) => const DetailPageScreen(),
             '/product-detail': (context) => ProductScreen(),
             '/cart': (context) => const CartScreen(),
-            '/checkout': (context) => const CheckOutScreen()
+            '/checkout': (context) => const CheckOutScreen(),
+            '/checkout-success': (context) => const CheckoutSuccessScreen(),
           },
           builder: (context, child) {
             return MediaQuery(

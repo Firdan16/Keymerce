@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:keymerce/screen/home/cart_screen.dart';
 import 'package:keymerce/screen/home/chat_screen.dart';
 import 'package:keymerce/screen/home/favorite_screen.dart';
 import 'package:keymerce/screen/home/home_screen.dart';
 import 'package:keymerce/screen/home/profile_screen.dart';
 import 'package:keymerce/theme.dart';
+import 'package:page_transition/page_transition.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -47,7 +49,13 @@ class _MainScreenState extends State<MainScreen> {
   Widget cartButton() {
     return FloatingActionButton(
       onPressed: () {
-        Navigator.pushNamed(context, '/cart');
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.bottomToTop,
+                duration: const Duration(milliseconds: 400),
+                reverseDuration: const Duration(milliseconds: 400),
+                child: const CartScreen()));
       },
       backgroundColor: secondaryColor,
       child: Image.asset('assets/icon_cart.png', width: 20),

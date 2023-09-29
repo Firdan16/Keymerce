@@ -147,6 +147,7 @@ class _CartScreenState extends State<CartScreen> {
       appBar: AppBar(
         backgroundColor: backgroundColor1,
         centerTitle: true,
+        automaticallyImplyLeading: false,
         title: Text(
           'Your Cart',
           style: primaryTextStyle.copyWith(
